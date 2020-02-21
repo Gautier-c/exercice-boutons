@@ -1,0 +1,71 @@
+body
+{
+    display: flex;
+}
+.btn
+{
+    width: 100px;
+    height: 75px;
+    padding: 10px;
+    margin: 25px;
+    text-align: center;
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: 2em;
+    &:hover{
+        animation: shake 0.5s 2 ease;
+    }
+}
+    
+.btn-white
+{
+    &:hover{
+        color:red;
+        transition: 1s;
+    }
+}
+.btn-red
+{
+    background-color: red;
+    &:hover{
+        background-color: royalblue;
+        color: red;
+        transition: 1s;
+    }
+    
+}
+.btn-blue
+{
+    background-color: royalblue;
+    &:hover{
+        background-color:white;
+        color: royalblue;
+        transition: 1s;
+    }
+}
+
+
+@keyframes shake
+{
+   0%{
+       transform: translate(0px);
+   }
+   10%, 30%{
+       transform: translate(-6px);
+   }
+   20%{
+       transform: translate(-12px);
+   }
+   50%{
+    transform: translate(0px);
+   }
+   60%, 80%{
+       transform: translate(6px);
+   }
+   70%{
+       transform: translate(12px);
+   }
+   100%{
+    transform: translate(0px);
+   }
+}
